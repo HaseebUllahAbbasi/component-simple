@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "description": "A simple react component that accepts a list of password requirements and updates each as they are fulfilled",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'Not Defined Yet' ",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "release": "semantic-release  --debug",
+    "lint": "eslint src test --ext .ts --resolve-plugins-relative-to .",
+    "lint:fix": "npm run lint -- --fix",
+    "test:integration": "echo 'Not Defined Yet' "
   },
   "repository": {
     "type": "git",
@@ -48,5 +56,9 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://www.buymeacoffee.com/haseebullah"
   }
 }
