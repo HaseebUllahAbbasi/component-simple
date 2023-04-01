@@ -1,12 +1,13 @@
 {
   "name": "component-simple",
   "version": "0.0.1",
-  "description": "component-simple , soon, will be added",
-  "main": "index.js",
+  "description": "A simple react component that accepts a list of password requirements and updates each as they are fulfilled",
+  "type": "module",
   "scripts": {
-    "build": "npx rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-lib": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,8 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.19.1",

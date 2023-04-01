@@ -1,1 +1,1 @@
-export * from "./CheckMark";
+export * from "./CheckMark.jsx";
